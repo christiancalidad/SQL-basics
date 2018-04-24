@@ -56,18 +56,18 @@ Para cambiar el password de administrador use:
 
 
       ALTER USER 'root'@'localhost' IDENTIFIED BY 'MyNewPass';
-      
-      
+
+
 En mac OS, para cambiar el valor de la variable. entre al directorio /Library/LaunchDaemons
 y agregue la línea:
-	
+
 	 <string>—secure-file-priv=</string>
 
 en el archivo 'com.oracle.oss.mysql.mysqld.plist'
 
-   
 
-      
+
+
 ---
 
 **Juan David Velásquez Henao**    
@@ -75,5 +75,7 @@ jdvelasq@unal.edu.co
 Universidad Nacional de Colombia, Sede Medellín  
 Facultad de Minas  
 Medellín, Colombia  
+[LinkedIn](https://co.linkedin.com/in/juan-david-velásquez-henao-94078979), [GitHub](https://github.com/jdvelasq), [ResearchGate](https://www.researchgate.net/profile/Juan_Velasquez8)
 
-[Licencia](https://github.com/jdvelasq/Tutorials-on-ETL-processes-for-analytics/blob/master/LICENSE)
+
+[Licencia](https://github.com/jdvelasq/SQL-for-analytics/tree/master/LICENSE)
