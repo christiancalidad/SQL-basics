@@ -13,7 +13,7 @@ tutorial introductorio a la programación en SQL usando el gestor MySQL.
 
 El siguiente grafo muestra donde encaja este tutorial en el proceso.
 
-![readme-sql.jpg](images/readme-sql.jpg)
+![readme.jpg](images/readme.jpg)
 
 ## Objetivos
 
