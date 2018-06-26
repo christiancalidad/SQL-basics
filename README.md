@@ -29,18 +29,47 @@ Al finalizar este tutorial el lector debe estar en capacidad de usar el lenguaje
 
 Para realizar este tutorial usted debe tener instalados:
 
-* [MySQL Community Edition](https://dev.mysql.com/downloads/mysql/)
+* [MySQL Community Edition](https://dev.mysql.com/downloads/mysql/), por lo menos el MySQL Community Server.
+
+	Haga click [aquí](https://dev.mysql.com/doc/refman/5.6/en/installing.html) para acceder
+	a la guía de instalación de MySQL para diferentes sistemas operativos.  
+
+	Lea las siguientes recomendaciones de instalación:
+
+- MySQL Server requiere la instalación o actualización de Microsoft Visual C++, esta acción se puede ver impedida durante  la consiguración del instalador por algunos antivirus. Asegurese de que su antivirus no bloquee dicha acción. 
+
+- Para controlar el acceso a las bases de dato, MySQL Server permite la gestión de usuarios y contraseñas. Con el objetivo de conectar el producto con Python, se requiere elegir la forma **NO** recomendada por el sistema para evitar la encriptación de los datos de usuario.
+
+- El instalador crea directorios para el almacenamiento de datos del programa y para la gestión de la información en las bases de datos en el disco C:. Este último se encuentra por defecto oculto en el explorador de archivos, por lo tanto es necesario hacer visibles todas las carpetas ocultas, en Windows. 
+
+- Cuando se complete la instalación, es necesario desactivar el modo `secure-file-priv` que impide que los archivos en el directorio de datos sean visualizados por fuera del servidor. Para ello, se debe abrir el archivo `my.ini` que se encuentra en el directorio `C:\ProgramData\MySQL\MySQL Server 8.0` para Windows y asegurarse de que el campo identificado como `#Secure File Priv.` se encuentre de la siguiente forma:
+
+	`# Secure File Priv.`
+
+	`secure-file-priv=""`
+
+	Luego, reinicie el equipo para actualizar la sesión de MySQL Server. 
+
 * [Anaconda Python](https://www.anaconda.com/download/#macos)
 * Y los paquetes:
    * [`ipython-sql`](https://github.com/catherinedevlin/ipython-sql).
    * `PyMySQL`.
+   * `Traitlets`.
+   
+> Nota: Instale los paquetes con `pip install ipython-sql; pip install pymysql`; `pip install traitlets`.
 
+## Conexión entre Jupyter y MySQL Server.
+Para seguir las instrucciones, asegurese de contar con Jupyter Notebook conectado al kernel de Python a través del promt de comandos o desde Anaconda promt, y tener correctamente instalados los paquetes mencionados. 
 
-Haga click [aquí](https://dev.mysql.com/doc/refman/5.6/en/installing.html) para acceder
-a la guía de instalación de MySQL para diferentes sistemas operativos.
-
-> Nota: Instale los paquetes con `pip install ipython-sql; pip install pymysql`.
-
+	1. Abra una un libro de Jupyter con el kernel de Python
+	
+	2. Ejecute los siguientes comandos:
+		
+		from traitlets.config import Bool, Unicode
+		
+		%load_ext sql
+		
+		%sql mysql+pymysql://USUARIO:CONTRASEÑA@localhost
 
 ## Información adicional
 
@@ -64,9 +93,6 @@ y agregue la línea:
 	 <string>—secure-file-priv=</string>
 
 en el archivo 'com.oracle.oss.mysql.mysqld.plist'
-
-
-
 
 ---
 
