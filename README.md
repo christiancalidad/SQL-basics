@@ -29,26 +29,26 @@ Al finalizar este tutorial el lector debe estar en capacidad de usar el lenguaje
 
 Para realizar este tutorial usted debe tener instalados:
 
-* [MySQL Community Edition](https://dev.mysql.com/downloads/mysql/), por lo menos el MySQL Community Server.
+* [MySQL Community Edition](https://dev.mysql.com/downloads/mysql/) o unicamente MySQL Community Server.
 
 	Haga click [aquí](https://dev.mysql.com/doc/refman/5.6/en/installing.html) para acceder
 	a la guía de instalación de MySQL para diferentes sistemas operativos.  
 
 	Lea las siguientes recomendaciones de instalación:
 
-- MySQL Server requiere la instalación o actualización de Microsoft Visual C++, esta acción se puede ver impedida durante  la consiguración del instalador por algunos antivirus. Asegurese de que su antivirus no bloquee dicha acción. 
+	- <div class=text-justify> MySQL Server requiere la instalación o actualización de Microsoft Visual C++, lo cual se puede ver impedido por algunos antivirus durante  la     	configuración del instalador. Asegurese de que su antivirus no bloquee dicha acción. </div>
 
-- Para controlar el acceso a las bases de dato, MySQL Server permite la gestión de usuarios y contraseñas. Con el objetivo de conectar el producto con Python, se requiere elegir la forma **NO** recomendada por el sistema para evitar la encriptación de los datos de usuario.
+	- <div class=text-justify> Para controlar el acceso a las bases de datos, MySQL Server permite la gestión de usuarios y contraseñas. Es necesario para conectar el producto a Python, elegir la forma NO recomendada por el sistema durante la configuración de contraseñas para evitar la encriptación de los datos de usuario.</div>
 
-- El instalador crea directorios para el almacenamiento de datos del programa y para la gestión de la información en las bases de datos en el disco C:. Este último se encuentra por defecto oculto en el explorador de archivos, por lo tanto es necesario hacer visibles todas las carpetas ocultas, en Windows. 
+	- <div class=text-justify>El instalador crea directorios para el almacenamiento de datos del programa y para la gestión de la información en las bases 		de datos en el disco C:. Este último se encuentra por defecto oculto en el explorador de archivos, por lo tanto es necesario 		hacer visibles todas las carpetas ocultas, en Windows. </div>
 
-- Cuando se complete la instalación, es necesario desactivar el modo `secure-file-priv` que impide que los archivos en el directorio de datos sean visualizados por fuera del servidor. Para ello, se debe abrir el archivo `my.ini` que se encuentra en el directorio `C:\ProgramData\MySQL\MySQL Server 8.0` para Windows y asegurarse de que el campo identificado como `#Secure File Priv.` se encuentre de la siguiente forma:
+	- <div class=text-justify> Cuando se complete la instalación, es necesario desactivar el modo `secure-file-priv` que impide que los archivos en el 		directorio de datos sean visualizados por fuera del servidor. Para ello, se debe abrir el archivo `my.ini` que se encuentra en 		el directorio `C:\ProgramData\MySQL\MySQL Server 8.0` para Windows y asegurarse de que el campo identificado como `#Secure File 	Priv.` se encuentre de la siguiente forma:</div>
 
-	`# Secure File Priv.`
+		`# Secure File Priv.`
 
-	`secure-file-priv=""`
+		`secure-file-priv=""`
 
-	Luego, reinicie el equipo para actualizar la sesión de MySQL Server. 
+		Luego, reinicie el equipo para actualizar la sesión de MySQL Server. 
 
 * [Anaconda Python](https://www.anaconda.com/download/#macos)
 * Y los paquetes:
@@ -58,7 +58,7 @@ Para realizar este tutorial usted debe tener instalados:
    
 > Nota: Instale los paquetes con `pip install ipython-sql; pip install pymysql`; `pip install traitlets`.
 
-## Conexión entre Jupyter y MySQL Server.
+## Conexión entre Jupyter y MySQL Server
 Para seguir las instrucciones, asegurese de contar con Jupyter Notebook conectado al kernel de Python a través del promt de comandos o desde Anaconda promt, y tener correctamente instalados los paquetes mencionados. 
 
 	1. Abra una un libro de Jupyter con el kernel de Python
