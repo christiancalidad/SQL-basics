@@ -38,13 +38,13 @@ Para realizar este tutorial usted debe tener instalados:
 	
 	- <div class=text-justify> MySQL Server requiere la instalación o actualización de Microsoft Visual C++, lo cual se puede ver impedido por algunos antivirus durante  la     	configuración del instalador. Asegurese de que su antivirus no bloquee dicha acción. </div>
 
-	- <div class=text-justify> Para controlar el acceso a las bases de datos, MySQL Server permite la gestión de usuarios y contraseñas. Es necesario para conectar el producto a Python elegir la forma NO recomendada por el sistema durante la configuración de contraseñas y evitar la encriptación de los datos de usuario.</div>
+	- <div class=text-justify> Para controlar el acceso a las bases de datos, MySQL Server permite la gestión de usuarios y contraseñas. Es necesario elegir la forma NO recomendada por el sistema durante la configuración de contraseñas y evitar la encriptación de los datos de usuario, para conectar el producto a Python.</div>
 	
 
-	- <div class=text-justify>El instalador crea directorios para el almacenamiento de datos del programa y para la gestión de la información en las bases 		de datos en el disco C:. Este último directorio se encuentra por defecto oculto en el explorador de archivos, por lo tanto es necesario 		hacer visibles todas las carpetas ocultas, en Windows. </div>
+	- <div class=text-justify>El instalador crea directorios para el almacenamiento de datos del programa y para la gestión de información en las bases 		de datos, en el disco C:. En Windows, el directorio necesario se encuentra por defecto oculto en el explorador de archivos, por lo que es necesario 		hacer visibles todas las carpetas ocultas, . </div>
 	
 
-	- <div class=text-justify> Cuando se complete la instalación, es necesario desactivar el modo `secure-file-priv` que impide que los archivos en el 		directorio de datos sean visualizados por fuera del servidor. Para ello, se debe abrir el archivo `my.ini` que se encuentra en 		el directorio `C:\ProgramData\MySQL\MySQL Server 8.0` para Windows y asegurarse de que el campo identificado como `#Secure File 	Priv.` se encuentre de la siguiente forma:</div>
+	- <div class=text-justify> Cuando se complete la instalación es necesario desactivar el modo `secure-file-priv` que impide que los archivos en el 		directorio de datos sean visualizados por fuera del servidor. Para ello, se debe abrir el archivo `my.ini` que se encuentra en 		el directorio `C:\ProgramData\MySQL\MySQL Server 8.0` para Windows y asegurarse de que el campo identificado como `#Secure File 	Priv.` se encuentre de la siguiente forma:</div>
 
 		`# Secure File Priv.`
 
