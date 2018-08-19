@@ -32,7 +32,7 @@ Descargue el instalador de MySQL Community Server.
 
 Verifique que el sistema operativo sea macOS y seleccione el archivo DMG.
 
-![images/mysql-download-macos.png]
+![mysql-download-macos.png](images/mysql-download-macos.png)
 
 
 Cuando llegue a la parte de **Configuration**, seleccione la opción **Use Legacy Password Encriptation**.
@@ -46,9 +46,9 @@ Finalice la instalación.
 #### Paso 4
 Verifique que el servidor de MySQL se esta ejecutado. Para ello, abra `Preferencias del Sistema` y haga clic en el ícono de MySQL.
 
-![images/pref-mysql.png]
+![images/pref-mysql.png]([images/pref-mysql.png])
 
-![images/mysql-run-macos.png]
+![images/mysql-run-macos.png](images/mysql-run-macos.png)
 
 Detenga la ejecución haciendo click en **Stop MySQL Server**. Los íconos deben cambiar a color rojo.
 
@@ -66,7 +66,14 @@ Agrege la siguiente linea de texto como se indica en la figura:
 
     <string>—-secure-file-priv=</string>
 
-![images/plist-macos.png]
+![images/plist-macos.png](images/plist-macos.png)
+
+
+Salga del editor con `ctrl+X`, salvando el archivo.
+
+
+#### Paso 7
+Reinicie el servidor de MySQL en `Preferencias del Sistema`. El ícono debe ponerse verde.
 
 
 
