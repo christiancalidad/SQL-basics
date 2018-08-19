@@ -46,7 +46,7 @@ Finalice la instalación.
 #### Paso 4
 Verifique que el servidor de MySQL se esta ejecutado. Para ello, abra `Preferencias del Sistema` y haga clic en el ícono de MySQL.
 
-![images/pref-mysql.png]([images/pref-mysql.png])
+![images/pref-mysql.png](images/pref-mysql.png)
 
 ![images/mysql-run-macos.png](images/mysql-run-macos.png)
 
