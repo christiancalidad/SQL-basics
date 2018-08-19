@@ -37,7 +37,7 @@ Verifique que el sistema operativo sea macOS y seleccione el archivo DMG.
 
 Cuando llegue a la parte de **Configuration**, seleccione la opción **Use Legacy Password Encriptation**.
 
-![images/mysql-legacy-macos.png]
+![images/mysql-legacy-macos.png](images/mysql-legacy-macos.png)
 
 En la ventana siguiente debe establecer el password para el usuario `root`. Use como password la palabra `password` ya que los tutoriales usan esta clave para la conexión.
 
